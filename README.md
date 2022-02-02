@@ -34,6 +34,14 @@ and the following in the `~/.aws/config`
 region=us-west-2
 output=json
 ```
+Or, you can set as env variables in your playbook, like this:
+
+```yml
+plugin: aws_ec2
+aws_profile: default
+aws_access_key: "{{ AWS_ACCESS_KEY_ID }}"
+aws_secret_key: "{{ AWS_SECRET_ACCESS_KEY }}"
+```
 
 ## References
 
